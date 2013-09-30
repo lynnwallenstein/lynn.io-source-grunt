@@ -1,0 +1,15 @@
+// ------------------------------------------------------------------
+//  Bodhi - Responsive Design Mixins
+// ------------------------------------------------------------------
+
+$tablet-width: 1024px;
+
+@mixin bodhi($breakpoint) {
+
+  // Laptops
+  @if $breakpoint == tablet {
+    @media all and (max-width: $tablet-width)
+      { @content; }
+  }
+
+} // @mixin bodhi($breakpoint)

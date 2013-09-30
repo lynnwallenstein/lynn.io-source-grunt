@@ -21,22 +21,33 @@ body {
 #content-wrapper {
   display: inline-block;
   float: left;
-  width: $nest-width;
-}
+  height: 100%;
+  max-width: 1280px - $sidebar-width;
+  min-height: 100%;
+  overflow: auto;
+  padding: 0 20px 0 120px;
+  width: calc(100% - #{$sidebar-width});
+
+  @include bodhi(tablet) {
+    width: calc(100% - #{$sidebar-width-tablet});
+  }
+
+} // #content-wrapper
+
+
 
 #main,
 #page-footer,
 #page-header {
   margin: auto;
   text-align: left;
+  width: 100%;
 } //  #main ...
 
 #main {
-  display: inline-block;
   color: $black;
+  display: inline-block;
   float: left;
-  padding-left: 175px;
-  max-width: $nest-width;
 
   .post-list {
     @extend %list-in-disguise;
@@ -65,3 +76,15 @@ body {
   }
 
 } // #main
+
+.page {
+
+  img {
+    border-radius: 50px;
+    float: right;
+    max-height: 300px;
+    max-width: $nest-width;
+    margin: 20px;
+  }
+
+}
