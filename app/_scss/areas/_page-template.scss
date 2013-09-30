@@ -12,7 +12,10 @@
     margin: 20px;
 
     @include bodhi(phone) {
-     float: none;
+      float: none;
+      max-height: 500px;
+      margin: auto;
+      width: 100%;
     }
 
   } // img

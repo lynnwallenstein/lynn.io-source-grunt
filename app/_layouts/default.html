@@ -18,6 +18,16 @@
   <link rel="stylesheet" href="/css/main.css">
   <!-- endbuild -->
 
+  {% if page.post-image %}
+  <style>
+    #page-header {
+      background-image: url({{ page.post-image }}) !important;
+      background-size: 100% auto;
+    }
+  </style>
+  {% endif %}
+
+
   <!-- build:js({app,.tmp}) /js/head-scripts.js -->
   <!-- Replace with a custom modernizer build for production -->
   <script src="/_bower_components/modernizr/modernizr.js"></script>
@@ -27,7 +37,8 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </head>
-<body class="preload halloween">
+<body class="preload halloween {% if page.post-image %}custom-image{% endif %}">
+
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
