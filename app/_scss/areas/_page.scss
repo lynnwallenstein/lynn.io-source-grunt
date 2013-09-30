@@ -16,7 +16,12 @@ body {
   padding: 0;
   min-height: 100%;
   text-align: left;
-}
+
+  @include bodhi(phone) {
+    border-top: none;
+  }
+
+} // body
 
 #content-wrapper {
   display: inline-block;
@@ -28,13 +33,16 @@ body {
   padding: 0 20px 0 120px;
   width: calc(100% - #{$sidebar-width});
 
-  @include bodhi(tablet) {
-    width: calc(100% - #{$sidebar-width-tablet});
+  @include bodhi(compact) {
+    height: auto;
+    padding: 0 20px;
+    max-width: none;
+    min-height: 0;
+    text-align: center;
+    width: 100%;
   }
 
 } // #content-wrapper
-
-
 
 #main,
 #page-footer,
@@ -48,6 +56,11 @@ body {
   color: $black;
   display: inline-block;
   float: left;
+
+  @include bodhi(compact) {
+    float: none;
+    max-width: $nest-width;
+  }
 
   .post-list {
     @extend %list-in-disguise;
@@ -77,14 +90,4 @@ body {
 
 } // #main
 
-.page {
 
-  img {
-    border-radius: 50px;
-    float: right;
-    max-height: 300px;
-    max-width: $nest-width;
-    margin: 20px;
-  }
-
-}

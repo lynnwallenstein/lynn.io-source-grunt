@@ -3,14 +3,143 @@
 // ------------------------------------------------------------------
 
 #page-header {
+  background-image: url("#{$image-path}/color-blocks.jpg");
+  background-position: left top;
+  background-size: auto 100%;
+  background-repeat: repeat;
+  display: block;
+  float: left;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  width: $sidebar-width;
+
+  @include bodhi(compact) {
+    background-size: 25% auto;
+    background-position: 0 -100px;
+    float: none;
+    height: 250px;
+    min-height: 0;
+    width: 100%;
+  }
+
+  @include bodhi(phone) {
+    background-size: 40% auto;
+    height: 125px;
+  }
+
+  h1 {
+    $size: 200px;
+    background-image: url("#{$image-path}/fuck.svg");
+    background-position: top left;
+    background-size: auto $size;
+    color: $white;
+    font-size: 80px;
+    line-height: $size;
+    margin: 0;
+    padding-left: 200px;
+    position: absolute;
+      bottom: 200px;
+      left: 50px;
+
+    @include bodhi(compact) {
+      bottom: 20px;
+    }
+
+    @include bodhi(phone) {
+      $size: 110px;
+      background-size: auto $size;
+      font-size: 50px;
+      height: $size;
+      line-height: $size - 20px;
+      padding-left: 120px;
+        bottom: 10px;
+        left: 20px;
+    }
+
+  } // h1
+
+  $holiday-list:
+    new-years,
+    valentines-day,
+    st-patricks-day,
+    easter,
+    fourth-of-july,
+    halloween,
+    thanksgiving,
+    christmas;
+
+  @each $holiday in $holiday-list {
+
+    body.#{nth($holiday, 1)} & {
+      background-image: url("#{$image-path}/color-blocks-#{nth($holiday, 1)}.jpg");
+
+      h1 {
+        background-image: url("#{$image-path}/fuck-#{nth($holiday, 1)}.svg");
+      }
+
+    } // body.#{nth($holiday, 1)}  {
+
+  } // @each
+
+
+  .social-links {
+    @extend %list-in-disguise;
+    position: absolute;
+      right: 20px;
+      bottom: 20px;
+
+      @include bodhi(phone) {
+        right: 10px;
+        bottom: 10px;
+      }
+
+    li {
+      display: inline-block;
+      float: left;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    } // li
+
+    a {
+      color: $white;
+      font-size: 60px;
+      opacity: .5;
+      transition: all 0.15s ease-in;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      @include bodhi(compact) {
+        font-size: 45px;
+      }
+
+      @include bodhi(phone) {
+        font-size: 30px;
+      }
+
+    } // a
+
+  } // .social-links
+
+} // #page-sidebar
+
+#page-navigation {
   @extend %clearfix;
   display: inline-block;
   height: 200px;
+  margin-top: 20px;
   width: 100%;
-} // #page-header
 
-#page-navigation {
-  margin-top: 30px;
+  @include bodhi(compact) {
+   height: 50px;
+   max-width: $nest-width;
+  }
 
   ol {
     @extend %list-in-disguise;

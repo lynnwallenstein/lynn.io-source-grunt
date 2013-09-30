@@ -1,0 +1,20 @@
+// ------------------------------------------------------------------
+//  Page Template
+// ------------------------------------------------------------------
+
+.page {
+
+  img {
+    border-radius: 50px;
+    float: right;
+    max-height: 300px;
+    max-width: $nest-width;
+    margin: 20px;
+
+    @include bodhi(phone) {
+     float: none;
+    }
+
+  } // img
+
+} // .page

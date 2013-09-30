@@ -2,13 +2,21 @@
 //  Bodhi - Responsive Design Mixins
 // ------------------------------------------------------------------
 
+$compact-width: 1280px;
+$phone-width: 320px;
 $tablet-width: 1024px;
 
 @mixin bodhi($breakpoint) {
 
-  // Laptops
-  @if $breakpoint == tablet {
-    @media all and (max-width: $tablet-width)
+  // Smaller then Avg (1280px) Screens
+  @if $breakpoint == compact {
+    @media all and (max-width: $compact-width)
+      { @content; }
+  }
+
+  // Phone
+  @if $breakpoint == phone {
+    @media all and (max-width: $phone-width)
       { @content; }
   }
 
