@@ -1,0 +1,67 @@
+// ------------------------------------------------------------------
+//  Page Structure
+// ------------------------------------------------------------------
+
+html {
+  background-color: $white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 10px solid $wet-asphalt;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  text-align: left;
+}
+
+#content-wrapper {
+  display: inline-block;
+  float: left;
+  width: $nest-width;
+}
+
+#main,
+#page-footer,
+#page-header {
+  margin: auto;
+  text-align: left;
+} //  #main ...
+
+#main {
+  display: inline-block;
+  color: $black;
+  float: left;
+  padding-left: 175px;
+  max-width: $nest-width;
+
+  .post-list {
+    @extend %list-in-disguise;
+
+    li {
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      @extend %font-freight;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+
+    time {
+      font-size: 16px;
+      color: $silver;
+    }
+
+  }
+
+} // #main
