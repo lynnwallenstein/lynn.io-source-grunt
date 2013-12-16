@@ -60,25 +60,29 @@
   } // h1
 
   $holiday-list:
-    new-years,
-    valentines-day,
-    st-patricks-day,
-    easter,
-    fourth-of-july,
-    halloween,
-    thanksgiving,
-    christmas;
+    new-years #3e454f,
+    valentines-day #3e454f,
+    st-patricks-day #3e454f,
+    easter #3e454f,
+    fourth-of-july #3e454f,
+    halloween #393d3d,
+    thanksgiving #3e454f,
+    christmas #9a052c;
 
-  @each $holiday in $holiday-list {
+  @each $holiday, $primary-color in $holiday-list {
 
-    body.#{nth($holiday, 1)} & {
-      background-image: url("#{$image-path}/color-blocks-#{nth($holiday, 1)}.jpg");
+    @at-root body.#{$holiday} {
+      border-top-color: $primary-color;
+    }
+
+    body.#{$holiday} & {
+      background-image: url("#{$image-path}/color-blocks-#{$holiday}.jpg");
 
       h1 {
-        background-image: url("#{$image-path}/fuck-#{nth($holiday, 1)}.svg");
+        background-image: url("#{$image-path}/fuck-#{$holiday}.svg");
       }
 
-    } // body.#{nth($holiday, 1)}  {
+    } // body.#{$holiday} & {
 
   } // @each
 
