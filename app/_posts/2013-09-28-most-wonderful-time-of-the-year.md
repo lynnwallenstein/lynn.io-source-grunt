@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "And We're Back..."
-date:   2013-09-28 14:40:06
+title: "And We're Back..."
+date: 2013-09-28 14:40:06
 categories: blogging update
 excerpt: Lets try this one more time...
 ---
