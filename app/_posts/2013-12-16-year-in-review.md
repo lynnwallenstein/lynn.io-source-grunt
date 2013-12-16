@@ -1,18 +1,16 @@
 ---
 layout: post
 title: "Looking Back on 2013"
+date: 2013-12-13 14:40:06
 categories: blogging update
 excerpt: Looking back on 2013 and into what I am expecting in 2014.
 ---
 
-2013 was a pretty amazing year. It started out with me celebrating one year at [LivingSocial][livingsocial] in  January.
-Working at LivingSocial was an amazing experience for me both personally and professionally. I met people there that I have
-learned so much from and some I have been fortunate enough to call my closest friends.
+2013 was a pretty amazing year. It started out with me celebrating one year at [LivingSocial][livingsocial] in  January. Working at LivingSocial was an amazing experience for me both personally and professionally. I met people there that I have learned so much from and some I have been fortunate enough to call my closest friends.
 
 January was also an emotional whirlwind of happiness for others and sadness for me. A couple of my friends left the DC area to go move into new adventures in San Francisco and Berlin. It sort of broke up the band a little, but we used the powers of the internets to stay connected.
 
-In March/April,  I left LivingSocial for a new opportunity at [GitHub][github]. It is now December and I can't imagine a more
-amazing work environment. I am surrounded with an awesome team working on a project that I love. There is really nothing more I could ask for in a work environment. GitHub being in San Francisco also opened up a opportunity for me to travel more so it was great that I got to see my SF friends.
+In March/April,  I left LivingSocial for a new opportunity at [GitHub][github]. It is now December and I can't imagine a more amazing work environment. I am surrounded with an awesome team working on a project that I love. There is really nothing more I could ask for in a work environment. GitHub being in San Francisco also opened up a opportunity for me to travel more so it was great that I got to see my SF friends.
 
 My sister got remarried at the end of April and I was told to expect a new niece of newphew in January (not a shotgun wedding, but close!).
 
