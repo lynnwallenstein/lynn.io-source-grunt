@@ -2,5 +2,19 @@
 layout: default
 ---
 <article class="post">
-{{ content }}
+
+  <header>
+   <h1>{{ post.title }}</h1>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <dl>
+      <dt>Date Posted</dt>
+        <dd>{{ post.date}}</dd>
+      <dt>Trackback URL</dt>
+        <dd><a href="{{ post.url }}">{{ post.url }}"</a></dd>
+    </dl>
+  </footer>
 </article>
