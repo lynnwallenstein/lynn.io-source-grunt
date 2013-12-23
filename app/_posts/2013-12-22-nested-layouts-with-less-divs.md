@@ -6,8 +6,7 @@ categories: blogging css webdev
 excerpt: Using calc you can create really nice clean nested layouts without extra markup.
 ---
 
-First to start out, this method relies heavily on the use of the CSS [Calc][caniusecalc] as a unit value.
-This is fairly well supported on most modern browsers, but if you need to support old versions of IE (pre 9), this probably won't work for you.
+First to start out, this method relies heavily on the use of the CSS [Calc][caniusecalc] as a unit value. This is fairly well supported on most modern browsers, but if you need to support old versions of IE (pre 9), this probably won't work for you.
 
 Ok now that we got that out of the way...
 
@@ -82,8 +81,7 @@ So lets start by simplifying our markup a little bit:
 
 ```
 
-This is pretty clean and simple and we don't really want to add any more markup just for the sake of our design.
-Using calc we can dynamically add padding to the left and right so that the content is centered, but the design styles will apply to the whole block.
+This is pretty clean and simple and we don't really want to add any more markup just for the sake of our design. Using calc we can dynamically add padding to the left and right so that the content is centered, but the design styles will apply to the whole block.
 
 Lets take our `#main` and style it with a black background with the content in a 1280px width nested in the center.
 
@@ -124,11 +122,10 @@ Using [Codepen][codepen], I created a similar (yet even cleaner! Sass <3) versio
 <p data-height="420" data-theme-id="0" data-slug-hash="HKdCz" data-user="lynnwallenstein" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/lynnwallenstein/pen/HKdCz'>HKdCz</a> by Lynn Wallenstein (<a href='http://codepen.io/lynnwallenstein'>@lynnwallenstein</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-[caniusecacl]: http://caniuse.com/calc
+[caniusecalc]: http://caniuse.com/calc
 [github]: http://www.github.com
 [mozdevcalc]: https://developer.mozilla.org/en-US/docs/Web/CSS/calc
 [csstricks]: http://css-tricks.com/a-couple-of-use-cases-for-calc/
 [divitis]: http://en.wiktionary.org/wiki/divitis
 [codepen]: http://codepen.io/
 [sass]: http://sass-lang.com/
-
