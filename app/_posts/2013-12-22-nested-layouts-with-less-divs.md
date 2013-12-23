@@ -127,5 +127,5 @@ Using [Codepen][codepen], I created a similar (yet even cleaner! Sass <3) versio
 [mozdevcalc]: https://developer.mozilla.org/en-US/docs/Web/CSS/calc
 [csstricks]: http://css-tricks.com/a-couple-of-use-cases-for-calc/
 [divitis]: http://en.wiktionary.org/wiki/divitis
-[codepen]: http://codepen.io/
+[codepen]: http://codepen.io/lynnwallenstein/pen/HKdCz
 [sass]: http://sass-lang.com/
