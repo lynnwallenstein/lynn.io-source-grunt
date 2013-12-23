@@ -10,7 +10,7 @@ First to start out, this method relies heavily on the use of the CSS [Calc][cani
 
 Ok now that we got that out of the way...
 
-A currently very popular design style is what I call nested layouts. By this I mean the page is broken up into sections where the content is in the center, but some attribute such as a border or background color stretches the total width of the page.
+A currently very popular design style is what I call "nested layouts". By this I mean the page is broken up into sections where the content is in the center, but some attribute such as a border or background color stretches the total width of the page.
 
 ## The Example
 
@@ -20,7 +20,7 @@ A great example of this is one of my favorite sites [GitHub][github] :)
   <img src="/img/post-assets/2013-12-22/github.png">
 </a>
 
-While the GitHub web site doesn't actually use this method, it is a good example of the structure I am talking about:
+While the GitHub web site doesn't actually use the code method I describe in this post, it is a good visual example of the design style:
 
 <a href="/img/post-assets/2013-12-22/github-annotation.png" title="Page sections on GitHub with comment nest" class="colorbox">
   <img src="/img/post-assets/2013-12-22/github-annotation.png">
@@ -32,7 +32,7 @@ So in our example we have three content sections:
 * Content
 * Footer
 
-Each of these have design attributes (background color/images) that stretch the whole width of the page, but the content is nested in the center of the page. To achieve this effect GitHub wraps each content section in an `div` that it is full width and contains the design attributes (background color/image.)
+Each of these have design attributes (background color/image) that stretch the whole width of the page, but the content is nested in the center of the page. To achieve this effect GitHub wraps each content section in an `div` that it is full width and contains the design attributes (background color/image.)
 
 For our example lets focus on just the content section with the black iconed image background. We have a wrapping div with the styles for the `background-image`:
 
@@ -54,15 +54,15 @@ Its not "bad", it just adds a lot of extra unneccessary markup/divs which:
 * Makes it harder to use responsive CSS for responsive design
 * More code coming down the wire/larger page/performance
 
-There is a better way! (IF you don't have to worry about older browsers)
+There is a better way! ... IF you don't have to worry about older browsers :)
 
 ## Calc All the Things!
 
-[Calc][mozdevcalc] is one of my favorite new things about CSS. If you haven't played around with it I highly recommend you do, it is immensely powerful and has enabled me to do so many amazing things w/o relying on absolute positioning and/or adding tons of extra markup.
+[Calc][mozdevcalc] is one of my favorite new things about CSS. If you haven't played around with it, I highly recommend you do. Tt is immensely powerful and has enabled me to do so many amazing things without relying on absolute positioning and/or adding tons of extra markup.
 
-The key is that calc allows the browser use mixed units for units of measurements, like percentages and pixels.  For some good examples of calc is use, there is a great [CSSTricks][csstricks] article that goes over some common design patters and how calc can help.
+The key is that calc allows the browser to use mixed units for units of measurements.  For some good examples of calc is use, there is a great [CSSTricks][csstricks] article that goes over some common design patters and how calc can be used to achieve them.
 
-So how can calc help us from [Divitis][divitis]? Easy!
+So how can calc help us from [Divitis][divitis]? Easily!
 
 So lets start by simplifying our markup a little bit:
 
@@ -121,6 +121,10 @@ Using [Codepen][codepen], I created a similar (yet even cleaner! Sass <3) versio
 
 <p data-height="420" data-theme-id="0" data-slug-hash="HKdCz" data-user="lynnwallenstein" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/lynnwallenstein/pen/HKdCz'>HKdCz</a> by Lynn Wallenstein (<a href='http://codepen.io/lynnwallenstein'>@lynnwallenstein</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
+
+## Thats It!
+
+Thats all it takes. Now I have a full width designed page, but centered content with beautiful semantic markup and no divitis!
 
 [caniusecalc]: http://caniuse.com/calc
 [github]: http://www.github.com
