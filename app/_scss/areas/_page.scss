@@ -27,10 +27,12 @@ body {
   display: inline-block;
   float: left;
   height: 100%;
-  max-width: 1280px - $sidebar-width;
   min-height: 100%;
   overflow: auto;
-  padding: 0 20px 0 120px;
+  padding: 0 0 0 120px;
+  padding-right: -moz-calc(100% - 1280px);
+  padding-right: -webkit-calc(100% - 1280px);
+  padding-right: calc(100% - 1280px);
   width: calc(100% - #{$sidebar-width});
 
   @include bodhi(compact) {
