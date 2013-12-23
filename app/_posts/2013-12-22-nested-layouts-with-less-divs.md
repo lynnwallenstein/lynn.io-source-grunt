@@ -17,14 +17,14 @@ A currently very popular design style is what I call nested layouts. By this I m
 
 A great example of this is one of my favorite sites [GitHub][github] :)
 
-<a href="/post-assets/2013-12-22/github.png" title="GitHub Dot Com, The Web Site" class="colorbox">
-  <img src="/post-assets/2013-12-22/github.png">
+<a href="/img/post-assets/2013-12-22/github.png" title="GitHub Dot Com, The Web Site" class="colorbox">
+  <img src="/img/post-assets/2013-12-22/github.png">
 </a>
 
 While the GitHub web site doesn't actually use this method, it is a good example of the structure I am talking about:
 
-<a href="/post-assets/2013-12-22/github-annotation.png" title="Page sections on GitHub with comment nest" class="colorbox">
-  <img src="/post-assets/2013-12-22/github-annotation.png">
+<a href="/img/post-assets/2013-12-22/github-annotation.png" title="Page sections on GitHub with comment nest" class="colorbox">
+  <img src="/img/post-assets/2013-12-22/github-annotation.png">
 </a>
 
 So in our example we have three content sections:
@@ -37,14 +37,14 @@ Each of these have design attributes (background color/images) that stretch the 
 
 For our example lets focus on just the content section with the black iconed image background. We have a wrapping div with the styles for the `background-image`:
 
-<a href="/post-assets/2013-12-22/github-content-wrapper.png" title="Content Wrapper" class="colorbox">
-  <img src="/post-assets/2013-12-22/github-content-wrapper.png">
+<a href="/img/post-assets/2013-12-22/github-content-wrapper.png" title="Content Wrapper" class="colorbox">
+  <img src="/img/post-assets/2013-12-22/github-content-wrapper.png">
 </a>
 
 and then another `div` containing the content nested in the center using a fixed width with an auto margin, basicaly centering the content.
 
-<a href="/post-assets/2013-12-22/github-content.png" title="Content" class="colorbox">
-  <img src="/post-assets/2013-12-22/github-content.png">
+<a href="/img/post-assets/2013-12-22/github-content.png" title="Content" class="colorbox">
+  <img src="/img/post-assets/2013-12-22/github-content.png">
 </a>
 
 ## Why is this Bad?
