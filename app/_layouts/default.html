@@ -13,18 +13,19 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css({app,.tmp}) /css/main.css -->
+  <link rel="stylesheet" href="/_bower_components/colorbox/example1/colorbox.css">
   <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
   <link rel="stylesheet" href="/css/syntax.css">
   <link rel="stylesheet" href="/css/main.css">
   <!-- endbuild -->
 
   {% if page.post-image %}
-  <style>
-    #page-header {
-      background-image: url({{ page.post-image }}) !important;
-      background-size: 100% auto;
-    }
-  </style>
+    <style>
+      #page-header {
+        background-image: url({{ page.post-image }}) !important;
+        background-size: 100% auto;
+      }
+    </style>
   {% endif %}
 
 
@@ -43,7 +44,6 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-
   <header id="page-header" role="banner">
 
     <h1>Lynn.io</h1>
@@ -54,7 +54,7 @@
       <li><a class="ss-icon" href="http://www.dribbble.com/lynnwallenstein" target="dribbble">Dribbble</a></li>
     </ul>
 
-  </header>
+  </header><!-- /header#page-header-->
 
   <div id="content-wrapper">
 

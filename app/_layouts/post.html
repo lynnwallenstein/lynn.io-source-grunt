@@ -14,7 +14,7 @@ layout: default
       <dt>Date Posted</dt>
         <dd><time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></dd>
       <dt>Trackback URL</dt>
-        <dd><a href="{{ page.url }}">{{ page.url }}</a></dd>
+        <dd><a href="{{ domain }}{{ page.url }}">{{ domain }}{{ page.url }}</a></dd>
     </dl>
   </footer>
 

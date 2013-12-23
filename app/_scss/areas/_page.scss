@@ -67,7 +67,6 @@ body {
 
     li {
       margin-bottom: 50px;
-      padding-bottom: 50px;
     }
 
     a {
@@ -90,4 +89,7 @@ body {
 
 } // #main
 
-
+  .avatar {
+    border-radius: 50px;
+    float: right;
+  }

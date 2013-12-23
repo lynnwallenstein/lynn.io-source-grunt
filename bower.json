@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "normalize-css": "~2.1.3",
-    "jquery": "~1.10.2",
+    "jquery": "2.0.3",
     "modernizr": "~2.6.2",
-    "keanu": "https://github.com/meticulous/keanu.git"
+    "colorbox": "1.4.33"
   }
 }

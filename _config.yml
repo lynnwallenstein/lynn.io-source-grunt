@@ -5,6 +5,7 @@
 
 # Use _config.build.yml to override these settings on `grunt build`.
 
+domain: http://127.0.0.1:9000/
 name: lynn.io
 description: Lynn.io
 
