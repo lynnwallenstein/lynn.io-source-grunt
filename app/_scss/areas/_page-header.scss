@@ -19,8 +19,8 @@
   }
 
   @include bodhi(compact) {
-    background-size: 25% auto;
-    background-position: 0 -100px;
+    background-size: 125px auto;
+    background-position: 0 0;
     float: none;
     height: 250px;
     min-height: 0;
@@ -28,7 +28,7 @@
   }
 
   @include bodhi(phone) {
-    background-size: 40% auto;
+    background-size: 65px auto;
     height: 125px;
   }
 
@@ -150,9 +150,7 @@
 
   @include bodhi(compact) {
     height: 50px;
-    padding: 0 20px;
-    max-width: none;
-    min-height: 0;
+    padding: 0 30px;
     width: 100%;
   }
 

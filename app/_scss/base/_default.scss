@@ -50,23 +50,20 @@ h6 {
 
 a,
 a:link {
-    color: $link-color;
+  color: $link-color;
 } // a, a:link
 
 a:hover {
-    color: $link-color-hover;
+  color: $link-color-hover;
 } // a:hover
 
 a:active {
-    color: $link-color-active;
+  color: $link-color-active;
 } // a:active
 
 a:visited {
-    color: $link-color-visited;
+  color: $link-color-visited;
 } //  a:visited
-
-nav {
-}
 
 ::-moz-selection {
   background-color: $link-color;

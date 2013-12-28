@@ -16,13 +16,31 @@
   font-size: 13px;
   margin-top: 50px;
 
+  @include bodhi(phone) {
+    font-size: 11px;
+  }
+
   dt {
     float: left;
     width: 150px;
-  }
+
+    @include bodhi(phone) {
+      float: none;
+      width: 100%;
+    }
+
+  } // dt
 
   dd {
-    width: calc(100% - 200px;)
+    width: -moz-calc(100% - 200px);
+    width: -webkit-calc(100% - 200px);
+    width: calc(100% - 200px);
+
+    @include bodhi(phone) {
+      margin-left: 15px;
+      width: 100%;
+    }
+
   }
 
 } // .post-footer
