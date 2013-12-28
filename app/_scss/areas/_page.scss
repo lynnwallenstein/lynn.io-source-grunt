@@ -23,7 +23,7 @@ body {
 
 } //
 
-#content-wrapper {
+#main {
   display: inline-block;
   float: left;
   height: 100%;
@@ -33,6 +33,8 @@ body {
   padding-right: -moz-calc(100% - 1280px);
   padding-right: -webkit-calc(100% - 1280px);
   padding-right: calc(100% - 1280px);
+  width: -moz-calc(100% - #{$sidebar-width});
+  width: -calc calc(100% - #{$sidebar-width});
   width: calc(100% - #{$sidebar-width});
 
   @include bodhi(compact) {
@@ -40,19 +42,10 @@ body {
     padding: 0 20px;
     max-width: none;
     min-height: 0;
-    text-align: center;
     width: 100%;
   }
 
 } // #content-wrapper
-
-#main,
-#page-footer,
-#page-header {
-  margin: auto;
-  text-align: left;
-  width: 100%;
-} //  #main ...
 
 #main {
   color: $black;
@@ -78,6 +71,7 @@ body {
     h1 {
       @extend %font-freight;
       font-weight: bold;
+      line-height: .9;
       margin: 0;
       padding: 0;
     }
@@ -91,7 +85,7 @@ body {
 
 } // #main
 
-  .avatar {
-    border-radius: 50px;
-    float: right;
-  }
+.avatar {
+  border-radius: 50px;
+  float: right;
+}

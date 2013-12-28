@@ -54,26 +54,18 @@
 
   </header><!-- /header#page-header-->
 
-  <div id="content-wrapper">
+  <nav id="page-navigation">
+    <ol>
+      <li><a href="/about/index.html">About</a></li>
+      <li><a href="/">Posts</a></li>
+    </ol>
+  </nav>
 
-    <nav id="page-navigation">
-      <ol>
-        <li><a href="/about/index.html">About</a></li>
-        <li><a href="/">Posts</a></li>
-      </ol>
-    </nav>
+  <section id="main" role="main">
 
-    <section id="main" role="main">
+   {{ content }}
 
-     {{ content }}
-
-    </section><!-- /div#main -->
-
-    <footer id="page-footer">
-
-    </footer><!-- /footer#page-footer -->
-
-  </div>
+  </section><!-- /div#main -->
 
   {% include scripts.html %}
 
