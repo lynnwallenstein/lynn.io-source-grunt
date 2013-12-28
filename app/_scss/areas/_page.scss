@@ -28,7 +28,7 @@ body {
   color: $black;
   display: inline-block;
   float: left;
-  height: calc(100% - #{$navigation-height});
+  height: calc(100% - (#{$navigation-height} + #{$top-border-size}));
   overflow: auto;
   padding: 0 0 0 150px;
   padding-right: calc(100% - #{$content-view-width});
