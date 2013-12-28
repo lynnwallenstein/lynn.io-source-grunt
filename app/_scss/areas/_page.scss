@@ -30,8 +30,8 @@ body {
   float: left;
   height: calc(100% - (#{$navigation-height} + #{$top-border-size}));
   overflow: auto;
-  padding: 0 0 0 150px;
-  padding-right: calc(100% - #{$content-view-width});
+  padding-right: calc(100% - (#{$content-view-width} - 20px));
+  padding-left: 150px;
   width: calc(100% - #{$sidebar-width});
 
   @include bodhi(compact) {
