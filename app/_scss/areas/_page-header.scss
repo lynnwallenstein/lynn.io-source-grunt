@@ -139,17 +139,13 @@
 #page-navigation {
   @extend %clearfix;
   display: inline-block;
-  height: 100px;
-  margin-top: 20px;
-  padding-right: -moz-calc(100% - 1280px);
-  padding-right: -webkit-calc(100% - 1280px);
+  height: $navigation-height;
+  padding-top: 20px;
   padding-right: calc(100% - 1280px);
-  width: -moz-calc(100% - #{$sidebar-width});
-  width: -calc calc(100% - #{$sidebar-width});
   width: calc(100% - #{$sidebar-width});
 
   @include bodhi(compact) {
-    height: 50px;
+    height: $navigation-height-compact;
     padding: 0 30px;
     width: 100%;
   }

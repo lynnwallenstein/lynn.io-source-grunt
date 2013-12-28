@@ -10,10 +10,11 @@ html {
 }
 
 body {
-  border-top: 10px solid $gray-slate;
+  border-top: $top-border-size solid $gray-slate;
   height: 100%;
   margin: 0;
   padding: 0;
+  max-height: 100%;
   min-height: 100%;
   text-align: left;
 
@@ -21,20 +22,16 @@ body {
     border-top: none;
   }
 
-} //
+} // body
 
 #main {
+  color: $black;
   display: inline-block;
   float: left;
-  height: 100%;
-  min-height: 100%;
+  height: calc(100% - #{$navigation-height});
   overflow: auto;
-  padding: 0 0 0 120px;
-  padding-right: -moz-calc(100% - 1280px);
-  padding-right: -webkit-calc(100% - 1280px);
-  padding-right: calc(100% - 1280px);
-  width: -moz-calc(100% - #{$sidebar-width});
-  width: -calc calc(100% - #{$sidebar-width});
+  padding: 0 0 0 150px;
+  padding-right: calc(100% - #{$content-view-width});
   width: calc(100% - #{$sidebar-width});
 
   @include bodhi(compact) {
@@ -43,18 +40,6 @@ body {
     max-width: none;
     min-height: 0;
     width: 100%;
-  }
-
-} // #content-wrapper
-
-#main {
-  color: $black;
-  display: inline-block;
-  float: left;
-
-  @include bodhi(compact) {
-    float: none;
-    max-width: $nest-width;
   }
 
   .post-list {
