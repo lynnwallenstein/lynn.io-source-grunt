@@ -1,0 +1,8 @@
+<ul class="tag-list">
+  {% for tag in post.tags %}
+    <li><a href="/tag/{{ tag }}"><span class="ss-icon ss-air">tag</span> {{ tag }}</a></li>
+  {% endfor %}
+  {% for tag in page.tags %}
+    <li><a href="/tag/{{ tag }}"><span class="ss-icon ss-air">tag</span> {{ tag }}</a></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,156 @@
+// ------------------------------------------------------------------
+//  Posts
+// ------------------------------------------------------------------
+
+//  Index
+// ------------------------------------------------------------------
+
+.post-list {
+  @extend %list-in-disguise;
+
+  > li {
+    margin-bottom: 50px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    @extend %font-freight;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    letter-spacing: -0.02em;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+  } // p
+
+  .post-meta {
+    @extend %clearfix;
+    color: $silver;
+    font-size: 16px;
+    margin-top: 10px;
+
+    a {
+      color: $silver;
+    }
+
+  } // .post-meta
+
+  time {
+    float: left;
+    margin-right: 10px;
+  }
+
+} // .post-list
+
+
+//  Show
+// ------------------------------------------------------------------
+
+.post {
+
+  img {
+    max-height: 300px;
+    max-width: $nest-width;
+    margin: 20px;
+
+    @include bodhi(compact) {
+      margin: 20px 0;
+      max-width: 100%;
+    }
+
+  } // img
+
+} // .post
+
+.post-footer {
+  font-size: 13px;
+  margin-top: 50px;
+
+  @include bodhi(phone) {
+    font-size: 11px;
+  }
+
+  dt {
+    float: left;
+    width: 150px;
+
+    @include bodhi(phone) {
+      float: none;
+      width: 100%;
+    }
+
+  } // dt
+
+  dd {
+    width: calc(100% - 200px);
+
+    @include bodhi(phone) {
+      margin-left: 15px;
+      width: 100%;
+    }
+
+  } // dd
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  } // a
+
+} // .post-footer
+
+.tag-list {
+  @extend %list-in-disguise;
+
+  li {
+    display: inline-block;
+    margin-right: 2px;
+
+    &:after {
+      content: ","
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        content: "";
+      }
+
+    } // &:last-child
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    } // a
+
+    .ss-icon {
+      float: left;
+      margin-right: 3px;
+    }
+
+  } // li
+
+} // .tag-list

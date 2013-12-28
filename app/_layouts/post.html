@@ -14,17 +14,13 @@ layout: default
       {% if page.tags != empty %}
         <dt>Tagged</dt>
           <dd>
-            <ul class="tag-list">
-              {% for tag in page.tags %}
-                <li><a href="/tag/{.{ tag }}">{{ tag }}</a></li>
-              {% endfor %}
-            </ul>
+            {% include _tag_list.html %}
           </dd>
       {% endif %}
       <dt>Date Posted</dt>
-        <dd><time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></dd>
+        <dd><time datetime="{{ page.date }}"><span class="ss-icon ss-air">calendar</span> {{ page.date | date_to_string }}</time></dd>
       <dt>Trackback URL</dt>
-        <dd><a href="http://lynn.io{{ page.url }}">http://lynn.io{{ page.url }}</a></dd>
+        <dd><span class="ss-icon ss-air">bookmark</span><a href="http://lynn.io{{ page.url }}"> http://lynn.io{{ page.url }}</a></dd>
     </dl>
   </footer>
 

@@ -22,31 +22,26 @@
 
 // Default
 // ------------------------------------------------------------------
-
 @import "base/_default";
 
 // Vendor
 // ------------------------------------------------------------------
-
 @import "vendor/colorbox";
 
 // Components
 // ------------------------------------------------------------------
-
 @import "components/syntax";
 
 // Sections of Page
 // ------------------------------------------------------------------
-
-@import "areas/_page";
+@import "areas/_layout";
 @import "areas/_page-footer";
 @import "areas/_page-header";
-@import "areas/_page-template";
-@import "areas/_post-template";
+@import "areas/_pages";
+@import "areas/_posts";
 
 
 // Print CSS
 // ------------------------------------------------------------------
-
 @import "dependencies/print";
 

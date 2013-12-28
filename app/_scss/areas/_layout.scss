@@ -42,48 +42,5 @@ body {
     width: 100%;
   }
 
-  .post-list {
-    @extend %list-in-disguise;
-
-    li {
-      margin-bottom: 50px;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    h1 {
-      @extend %font-freight;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 0;
-      padding: 0;
-    }
-
-    time {
-      font-size: 16px;
-      color: $silver;
-    }
-
-    p {
-      letter-spacing: -0.02em;
-    }
-
-    p:first-of-type {
-      margin-top: 0;
-    }
-
-    p:last-of-type {
-      margin-bottom: 0;
-    }
-
-  } // .post-list
-
 } // #main
 
-.avatar {
-  border-radius: 50px;
-  float: right;
-}
