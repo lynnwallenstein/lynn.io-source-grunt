@@ -96,10 +96,14 @@
       right: 20px;
       bottom: 20px;
 
-      @include bodhi(phone) {
-        right: 10px;
-        bottom: 10px;
-      }
+    @include bodhi(compact) {
+      bottom: 13px;
+    }
+
+    @include bodhi(phone) {
+      right: 10px;
+      bottom: 10px;
+    }
 
     li {
       display: inline-block;

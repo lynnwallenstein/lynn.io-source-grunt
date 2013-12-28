@@ -11,6 +11,16 @@ layout: default
 
   <footer class="post-footer">
     <dl>
+      {% if page.tags != empty %}
+        <dt>Tagged</dt>
+          <dd>
+            <ul class="tag-list">
+              {% for tag in page.tags %}
+                <li><a href="/tag/{.{ tag }}">{{ tag }}</a></li>
+              {% endfor %}
+            </ul>
+          </dd>
+      {% endif %}
       <dt>Date Posted</dt>
         <dd><time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></dd>
       <dt>Trackback URL</dt>

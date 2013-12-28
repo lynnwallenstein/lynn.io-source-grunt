@@ -45,6 +45,30 @@
       width: 100%;
     }
 
+  } // dd
+
+  .tag-list {
+    @extend %list-in-disguise;
+
+    li {
+      display: inline-block;
+      margin-right: 2px;
+
+      &:after {
+        content: ","
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          content: "";
+        }
+
+      } // &:last-child
+
+    } // li
+
   }
 
 } // .post-footer

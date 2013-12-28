@@ -55,8 +55,9 @@ body {
 
     h1 {
       @extend %font-freight;
-      font-weight: bold;
-      line-height: .9;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
       margin: 0;
       padding: 0;
     }
@@ -66,7 +67,19 @@ body {
       color: $silver;
     }
 
-  }
+    p {
+      letter-spacing: -0.02em;
+    }
+
+    p:first-of-type {
+      margin-top: 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+  } // .post-list
 
 } // #main
 

@@ -2,7 +2,9 @@
 layout: post
 title: "Looking Back on 2013"
 date: 2013-12-13 14:40:06
-categories: blogging update
+tags:
+- blogging
+- update
 excerpt: Looking back on 2013 and into what I am expecting in 2014.
 ---
 

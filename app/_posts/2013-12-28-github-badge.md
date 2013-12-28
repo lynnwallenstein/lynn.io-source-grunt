@@ -2,7 +2,10 @@
 layout: post
 title: "jQuery GitHub Badge"
 date: 2013-12-28  02:07:44
-categories: css webdev opensource
+tags:
+- css
+- webdev
+- opensource
 excerpt: Updated GitHub user and project badge.
 ---
 
