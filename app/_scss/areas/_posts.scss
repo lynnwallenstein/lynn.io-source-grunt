@@ -122,7 +122,11 @@
 
   li {
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    } // &:last-child
 
     a {
       text-decoration: none;
