@@ -69,4 +69,4 @@ DEPENDENCIES
   github-pages
   jekyll (~> 1.0)
   redcarpet
-  sass (>= 3.3.0.alpha.25)
+  sass (= 3.3.0.rc.2)

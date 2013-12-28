@@ -77,3 +77,9 @@
   }
 
 } // %clearfix
+
+
+%nested {
+  padding-left: calc(50% - #{$nest-width});
+  padding-right: calc(50% - #{$nest-width});
+}

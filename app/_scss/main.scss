@@ -9,16 +9,16 @@
 
 // Dependencies
 // ------------------------------------------------------------------
-@import "dependencies/extends/_non-semantic-helpers";
-@import "dependencies/extends/_shortcuts";
-
-@import "dependencies/mixins/_bodhi";
-
 @import "dependencies/variables/_colors";
 @import "dependencies/variables/_paths";
 @import "dependencies/variables/_sizes";
 @import "dependencies/variables/_typography";
 @import "dependencies/variables/_z-index";
+
+@import "dependencies/mixins/_bodhi";
+
+@import "dependencies/extends/_non-semantic-helpers";
+@import "dependencies/extends/_shortcuts";
 
 // Default
 // ------------------------------------------------------------------
