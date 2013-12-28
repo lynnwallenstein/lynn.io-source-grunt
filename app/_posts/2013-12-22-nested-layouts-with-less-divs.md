@@ -2,7 +2,7 @@
 layout: post
 title: "Nested Layouts with Less Divs"
 date: 2013-12-22  20:20:20
-categories: blogging css webdev
+categories: css webdev
 excerpt: Using calc you can create really nice clean nested layouts without extra markup.
 ---
 
