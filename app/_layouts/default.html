@@ -13,9 +13,9 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css({app,.tmp}) /css/main.css -->
-  <link rel="stylesheet" href="/_bower_components/colorbox/example1/colorbox.css">
-  <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
-  <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/_bower_components/colorbox/example1/colorbox.css">
+    <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
   <!-- endbuild -->
 
   {% if page.post-image %}
@@ -28,7 +28,7 @@
 
   <!-- build:js({app,.tmp}) /js/head-scripts.js -->
   <!-- Replace with a custom modernizer build for production -->
-  <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 
   <script type="text/javascript" src="//use.typekit.net/sck7umt.js"></script>
@@ -38,7 +38,7 @@
 <body class="preload {% if page.post-image %}custom-image{% endif %}">
 
   <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <header id="page-header" role="banner">
@@ -46,12 +46,24 @@
     <a href="/"><h1>Lynn.io</h1></a>
 
     <ul class="social-links">
-      <li><a class="ss-icon ss-social-circle" href="http://www.github.com/lynnwallenstein" target="github">GitHubOctocat</a></li>
-      <li><a class="ss-icon ss-social-circle" href="http://www.twitter.com/lynnwallenstein" target="twitter">Twitter</a></li>
-      <li><a class="ss-icon ss-social-circle" href="http://www.dribbble.com/lynnwallenstein" target="dribbble">Dribbble</a></li>
+      <li>
+        <a class="ss-icon ss-social-circle" href="http://www.github.com/lynnwallenstein" target="github">
+          GitHubOctocat
+        </a>
+      </li>
+      <li>
+        <a class="ss-icon ss-social-circle" href="http://www.twitter.com/lynnwallenstein" target="twitter">
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a class="ss-icon ss-social-circle" href="http://www.dribbble.com/lynnwallenstein" target="dribbble">
+          Dribbble
+        </a>
+      </li>
     </ul>
 
-  </header><!-- /header#page-header-->
+  </header>
 
   <nav id="page-navigation">
     <ol>
@@ -64,22 +76,22 @@
 
    {{ content }}
 
-  </section><!-- /div#main -->
+  </section>
 
   {% include scripts.html %}
 
   <script type="text/javascript">
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '5161d8fbf5a1f51ab200007c');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '5161d8fbf5a1f51ab200007c');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
   </script>
 
 </body>
