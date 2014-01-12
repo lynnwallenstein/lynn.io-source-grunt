@@ -7,7 +7,9 @@ layout: default
     <h1>{{ page.title }}</h1>
   </header>
 
-  {{ content | emojify }}
+  <main class="post-main">
+    {{ content | emojify }}
+  </main>
 
   <footer class="post-footer">
     <dl>
