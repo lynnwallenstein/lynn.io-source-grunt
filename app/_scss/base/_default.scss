@@ -114,3 +114,13 @@ textarea {
   color: $black;
   padding: 0.2em 0;
 }
+
+// Emoji
+.page,
+.post {
+  .emoji {
+    height: 16px;
+    margin: 0;
+    width: 16px;
+  }
+}
