@@ -8,6 +8,10 @@
 .post-list {
   @extend %list-in-disguise;
 
+  @include bodhi(smaller-then-nest) {
+    margin: 0 15px;
+  }
+
   > li {
     margin-bottom: 50px;
   }
@@ -63,6 +67,10 @@
 
 .post {
 
+  @include bodhi(smaller-then-nest) {
+    padding: 0 15px;
+  }
+
   img {
     max-height: 300px;
     max-width: $nest-width;
@@ -114,6 +122,14 @@
     }
 
   } // a
+
+  .trackback-url {
+
+    .ss-icon {
+      margin-right: 3px;
+    }
+
+  } // .trackback-url
 
 } // .post-footer
 

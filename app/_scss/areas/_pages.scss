@@ -4,6 +4,10 @@
 
 .page {
 
+  @include bodhi(smaller-then-nest) {
+    margin: 0 15px;
+  }
+
   img {
     border-radius: 50px;
     float: right;
