@@ -7,9 +7,7 @@ layout: default
     <h1>{{ page.title }}</h1>
   </header>
 
-  <main class="post-main">
-    {{ content | emojify }}
-  </main>
+  {{ content | emojify }}
 
   <footer class="post-footer">
     <dl>
@@ -22,7 +20,7 @@ layout: default
       {% endif %}
 
       <dt>Date Posted</dt>
-        <dd><time datetime="{{ page.date }}"><span class="ss-icon ss-air">calendar</span> {{ page.date | date_to_string }}</time></dd>
+        <dd><time datetime="{{ page.date | date_to_xmlschema }}"><span class="ss-icon ss-air">calendar</span> {{ page.date | date_to_string }}</time></dd>
 
       <dt>Trackback URL</dt>
         <dd class="trackback-url"><span class="ss-icon ss-air">bookmark</span><a href="http://lynn.io{{ page.url }}"> http://lynn.io{{ page.url }}</a></dd>

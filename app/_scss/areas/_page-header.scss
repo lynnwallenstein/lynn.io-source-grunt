@@ -34,11 +34,13 @@
 
   h1 {
     $size: 200px;
+    @extend %font-atrament;
     background-image: url("#{$image-path}/fuck.svg");
     background-position: top left;
     background-size: auto $size;
     color: $white;
     font-size: 80px;
+    font-weight: 500;
     line-height: $size;
     margin: 0;
     padding-left: 200px;
@@ -180,8 +182,8 @@
       color: $black;
       font-size: 22px;
       text-decoration: none;
-      text-transform: uppercase
-    }
+      text-transform: uppercase;
+    } // a
 
   } // ol
 

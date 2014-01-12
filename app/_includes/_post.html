@@ -8,7 +8,7 @@
 
   <div class="post-meta">
 
-    <time datetime="{{ post.date }}"><span class="ss-icon ss-air">calendar</span> {{ post.date | date_to_string }}</time>
+    <time datetime="{{ post.date | date_to_xmlschema }}"><span class="ss-icon ss-air">calendar</span> {{ post.date | date_to_string }}</time>
 
     {% include _tag_list.html %}
 
