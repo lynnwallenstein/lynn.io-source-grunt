@@ -169,6 +169,10 @@
         border-bottom: 2px solid $asbestos;
       }
 
+      &.current {
+        border-bottom: 2px solid $asbestos;
+      }
+
     } // li
 
     a {

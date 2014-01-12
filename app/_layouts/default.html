@@ -67,8 +67,8 @@
 
   <nav id="page-navigation">
     <ol>
-      <li><a href="/about/index.html">About</a></li>
-      <li><a href="/">Posts</a></li>
+      <li class="{% if page.url == '/about/' %}current{% endif %}"><a href="/about/index.html">About</a></li>
+      <li class="{% if page.url == '/' %}current{% endif %}"><a href="/">Posts</a></li>
     </ol>
   </nav>
 
