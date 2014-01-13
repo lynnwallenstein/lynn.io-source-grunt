@@ -6,10 +6,10 @@
 @media print {
 
   * {
-    background  : transparent !important;
-    box-shadow  : none !important;
-    color       : #000 !important; /* Black prints faster: h5bp.com/s */
-    text-shadow : none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    text-shadow: none !important;
   }
 
   a,
@@ -37,8 +37,8 @@
 
   pre,
   blockquote {
-    border            : 1px solid #999;
-    page-break-inside : avoid;
+    border: 1px solid #999;
+    page-break-inside: avoid;
   }
 
   thead {
@@ -61,8 +61,8 @@
   p,
   h2,
   h3 {
-    orphans : 3;
-    widows  : 3;
+    orphans: 3;
+    widows : 3;
   }
 
   h2,
