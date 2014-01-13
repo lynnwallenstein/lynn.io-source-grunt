@@ -51,19 +51,20 @@ h6 {
 a,
 a:link {
   color: $link-color;
+
+  &:hover {
+    color: $link-color-hover;
+  } // a:hover
+
+  &:active {
+    color: $link-color-active;
+  } // a:active
+
+  &:visited {
+    color: $link-color-visited;
+  } //  a:visited
+
 } // a, a:link
-
-a:hover {
-  color: $link-color-hover;
-} // a:hover
-
-a:active {
-  color: $link-color-active;
-} // a:active
-
-a:visited {
-  color: $link-color-visited;
-} //  a:visited
 
 ::-moz-selection {
   background-color: $link-color;
@@ -126,3 +127,19 @@ textarea {
   }
 
 } // .page,
+
+code,
+pre {
+  @extend %font-source-code-pro;
+  background-color: $base16-01;
+  color: $base16-07;
+  font-size: $base-font-size - 2px;
+  font-weight: 300;
+  padding: 0 3px;
+}
+
+pre code {
+  background-color: transparent;
+  display: block;
+  padding: 5px;
+}
