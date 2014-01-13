@@ -4,51 +4,51 @@
 
 // For image replacement
 %image-replacement {
-  background-color: transparent;
-  color: transparent;
-  border: 0;
-  overflow: hidden;
-  text-indent: 100%;
-  text-shadow: none;
-  white-space: nowrap;
+  background-color : transparent;
+  color            : transparent;
+  border           : 0;
+  overflow         : hidden;
+  text-indent      : 100%;
+  text-shadow      : none;
+  white-space      : nowrap;
 
   &:before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 0;
+    content : "";
+    display : block;
+    height  : 100%;
+    width   : 0;
   }
 
 } // %image-replacement
 
 // Hide for both screenreaders and browsers: h5bp.com/m
 %hidden {
-  display: none !important;
-  visibility: hidden;
+  display    : none !important;
+  visibility : hidden;
 }
 
 // Hide only visually, but have it available for screenreaders: h5bp.com/n  & h5bp.com/o */
 %visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  border   : 0;
+  clip     : rect(0 0 0 0);
+  height   : 1px;
+  margin   : -1px;
+  overflow : hidden;
+  padding  : 0;
+  position : absolute;
+  width    : 1px;
   // Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 
   &.focusable {
 
     &:active,
     &:focus {
-       clip: auto;
-       height: auto;
-       margin: 0;
-       overflow: visible;
-       position: static;
-       width: auto;
+       clip     : auto;
+       height   : auto;
+       margin   : 0;
+       overflow : visible;
+       position : static;
+       width    : auto;
     } // &.a
 
   } // &.focusable
@@ -57,7 +57,7 @@
 
 // Hide visually and from screenreaders, but maintain layout
 %invisible {
-  visibility: hidden;
+  visibility : hidden;
 }
 
 // Clearfix
@@ -68,12 +68,12 @@
 
   &:after,
   &:before {
-    content: " ";
-    display: table;
+    content : " ";
+    display : table;
   }
 
   &:after {
-    clear: both;
+    clear : both;
   }
 
 } // %clearfix
