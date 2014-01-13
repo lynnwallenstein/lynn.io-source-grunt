@@ -6,7 +6,6 @@ $black                         : #333332 !default;
 $white                         : #fff !default;
 
 // Grays
-
 $gray                          : #a29f99 !default;
 $gray-light                    : lighten($gray, 20%) !default;
 $gray-lighter                  : lighten($gray, 50%) !default;
@@ -16,7 +15,6 @@ $gray-darker                   : darken($gray, 50%) !default;
 $gray-darkest                  : darken($gray, 80%) !default;
 
 // Transparent
-
 $transparent-white             : hsla(100,100%,100%,0) !default;
 $transparent-black             : hsla(0,0%,0%,0) !default;
 
@@ -29,8 +27,6 @@ $glow-lightest                 : hsla(100,100%,100%,0.1) !default;
 $glow-lighter                  : hsla(100,100%,100%,0.25) !default;
 $glow-light                    : hsla(100,100%,100%,0.5) !default;
 $glow                          : hsla(100,100%,100%,0.75) !default;
-
-$highlight                     : transparentize($yellow, .7) !default;
 
 
 // Better Default Colors -https://github.com/mrmrs/colors
@@ -124,6 +120,7 @@ $app-color-secondary           : $red !default; // Secondary color used
 $site-background-color         : $white !default;
 
 // Text Color
+$highlight                     : transparentize($yellow, .7) !default;
 $text-color                    : $black !default;
 $text-color-light              : $gray-light !default;
 
