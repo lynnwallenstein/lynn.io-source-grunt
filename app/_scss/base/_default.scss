@@ -5,6 +5,8 @@
 * {
   background-repeat: no-repeat;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -51,19 +53,20 @@ h6 {
 a,
 a:link {
   color: $link-color;
+
+  &:hover {
+    color: $link-color-hover;
+  } // a:hover
+
+  &:active {
+    color: $link-color-active;
+  } // a:active
+
+  &:visited {
+    color: $link-color-visited;
+  } //  a:visited
+
 } // a, a:link
-
-a:hover {
-  color: $link-color-hover;
-} // a:hover
-
-a:active {
-  color: $link-color-active;
-} // a:active
-
-a:visited {
-  color: $link-color-visited;
-} //  a:visited
 
 ::-moz-selection {
   background-color: $link-color;
@@ -113,4 +116,32 @@ textarea {
   background-color: #ccc;
   color: $black;
   padding: 0.2em 0;
+}
+
+// Emoji
+.page,
+.post {
+
+  .emoji {
+    height: 16px;
+    margin: 0;
+    width: 16px;
+  }
+
+} // .page,
+
+code,
+pre {
+  @extend %font-source-code-pro;
+  background-color: $base16-01;
+  color: $base16-07;
+  font-size: $base-font-size - 2px;
+  font-weight: 300;
+  padding: 0 3px;
+}
+
+pre code {
+  background-color: transparent;
+  display: block;
+  padding: 5px;
 }

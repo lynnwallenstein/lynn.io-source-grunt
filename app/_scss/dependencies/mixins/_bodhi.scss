@@ -20,4 +20,10 @@ $tablet-width: 1024px;
       { @content; }
   }
 
+  // Nest
+  @if $breakpoint == smaller-then-nest {
+    @media all and (max-width: $nest-width)
+      { @content; }
+  }
+
 } // @mixin bodhi($breakpoint)

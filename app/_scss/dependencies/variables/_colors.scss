@@ -2,101 +2,133 @@
 //  Colors
 // ------------------------------------------------------------------
 
-$black: #333332 !default;
-$white: #fff !default;
-$red: red !default;
-$orange: orange !default;
-$yellow: yellow !default;
-$green: green !default;
-$blue: blue !default;
-$purple: purple !default;
-$brown: brown !default;
+$black                          : #333332 !default;
+$white                          : #fff !default;
 
 // Grays
-
-$gray: #a29f99 !default;
-$gray-light: lighten($gray, 20%) !default;
-$gray-lighter: lighten($gray, 50%) !default;
-$gray-lightest: lighten($gray, 90%) !default;
-$gray-dark: darken($gray, 20%) !default;
-$gray-darker: darken($gray, 50%) !default;
-$gray-darkest: darken($gray, 80%) !default;
+$gray                           : #a29f99 !default;
+$gray-light                     : lighten($gray, 20%) !default;
+$gray-lighter                   : lighten($gray, 50%) !default;
+$gray-lightest                  : lighten($gray, 90%) !default;
+$gray-dark                      : darken($gray, 20%) !default;
+$gray-darker                    : darken($gray, 50%) !default;
+$gray-darkest                   : darken($gray, 80%) !default;
 
 // Transparent
+$transparent-white              : hsla(100,100%,100%,0) !default;
+$transparent-black              : hsla(0,0%,0%,0) !default;
 
-$transparent-white: hsla(100,100%,100%,0) !default;
-$transparent-black: hsla(0,0%,0%,0) !default;
+$shadow-lightest                : hsla(0, 0%, 0%, 0.1) !default;
+$shadow-lighter                 : hsla(0, 0%, 0%, 0.25) !default;
+$shadow-light                   : hsla(0, 0%, 0%, 0.5) !default;
+$shadow                         : hsla(0, 0%, 0%, 0.75) !default;
 
-$shadow-lightest: hsla(0, 0%, 0%, 0.1) !default;
-$shadow-lighter: hsla(0, 0%, 0%, 0.25) !default;
-$shadow-light: hsla(0, 0%, 0%, 0.5) !default;
-$shadow: hsla(0, 0%, 0%, 0.75) !default;
+$glow-lightest                  : hsla(100,100%,100%,0.1) !default;
+$glow-lighter                   : hsla(100,100%,100%,0.25) !default;
+$glow-light                     : hsla(100,100%,100%,0.5) !default;
+$glow                           : hsla(100,100%,100%,0.75) !default;
 
-$glow-lightest: hsla(100,100%,100%,0.1) !default;
-$glow-lighter: hsla(100,100%,100%,0.25) !default;
-$glow-light: hsla(100,100%,100%,0.5) !default;
-$glow: hsla(100,100%,100%,0.75) !default;
 
-$highlight: transparentize($yellow, .7) !default;
+// Better Default Colors -https ://github.com/mrmrs/colors
+// ------------------------------------------------------------------
 
-// Flat UI Colors : http://flatuicolors.com/
+$aqua                           : #7FDBFF !default;
+$blue                           : #0074D9 !default;
+$navy                           : #001F3F !default;
+$teal                           : #39CCCC !default;
+$green                          : #2ECC40 !default;
+$olive                          : #3D9970 !default;
+$lime                           : #01FF70 !default;
+
+// Warm
+$yellow                         : #FFDC00 !default;
+$orange                         : #FF851B !default;
+$red                            : #FF4136 !default;
+$fuchsia                        : #F012BE !default;
+$purple                         : #B10DC9 !default;
+$maroon                         : #85144B !default;
+
+// Gray Scale
+//$white                        : #fff !default;
+//$silver                       : #ddd !default;
+//$gray                         : #aaa !default;
+//$black                        : #111 !default;
+
+// Flat UI Colors               : http://flatuicolors.com/
 // ------------------------------------------------------------------
 
 // Greenish/Teal
-$green-sea: #16a085; // Lighter
-$turquoise: #1abc9c; // Darker
+$green-sea                      : #16a085; // Lighter
+$turquoise                      : #1abc9c; // Darker
 
 // Green
-$emerald: #2ecc71; // Lighter
-$nephritis: #27ae60; // Darker
+$emerald                        : #2ecc71; // Lighter
+$nephritis                      : #27ae60; // Darker
 
 // Blue - Bright
-$peter-river: #3498db; // Lighter
-$belize-hole: #2980b9; // Darker
+$peter-river                    : #3498db; // Lighter
+$belize-hole                    : #2980b9; // Darker
 
 // Blue - Dark
-$wet-asphalt: #34495e; // Lighter
-$midnight-blue: #2c3e50; // Darker
+$wet-asphalt                    : #34495e; // Lighter
+$midnight-blue                  : #2c3e50; // Darker
 
 // Purple
-$amethyst: #9b59b6; // Lighter
-$wisteria: #8e44ad; // Darker
+$amethyst                       : #9b59b6; // Lighter
+$wisteria                       : #8e44ad; // Darker
 
 // Red
-$alizariin: #e74c3c; // Lighter
-$pomegranate: #c0392b; // Darker
+$alizariin                      : #e74c3c; // Lighter
+$pomegranate                    : #c0392b; // Darker
 
 // Orange
-$sunflower: #f1c40f; // Lighter
-$orange: #f39c12; // Darker
+$sunflower                      : #f1c40f; // Lighter
+$orange                         : #f39c12; // Darker
 
 // Grays
-$clouds: #ecf0f1;
-$silver: #bdc3c7;
-$concrete: #95a5a6;
-$asbestos: #7f8c8d;
-$gray-slate: #3e454f;
+$clouds                         : #ecf0f1;
+$silver                         : #bdc3c7;
+$concrete                       : #95a5a6;
+$asbestos                       : #7f8c8d;
+$gray-slate                     : #3e454f;
+
+// Base16 - Ocean - http        ://chriskempson.github.io/base16/#ocean
+// ------------------------------------------------------------------
+
+$base16-00                      : #2B303B;
+$base16-01                      : #343D46;
+$base16-02                      : #4F5B66;
+$base16-03                      : #65737E;
+$base16-04                      : #A7ADBA;
+$base16-05                      : #C0C5CE;
+$base16-06                      : #DFE1E8;
+$base16-07                      : #EFF1F5;
+$base16-08                      : #BF616A;
+$base16-09                      : #D08770;
+$base16-0A                      : #EBCB8B;
+$base16-0B                      : #A3BE8C;
+$base16-0C                      : #96B5B4;
+$base16-0D                      : #8FA1B3;
+$base16-0E                      : #B48EAD;
+$base16-0F                      : #AB7967;
 
 //  Colors2THings
 // ------------------------------------------------------------------
 
-$app-color-primary: $blue !default; // The main highlight color of the app
-$app-color-secondary: $red !default; // Secondary color used
-
-$site-background-color: $white !default;
+$app-color-primary              : $blue !default; // The main highlight color of the app
+$app-color-secondary            : $red !default; // Secondary color used
+$site-background-color          : $white !default;
 
 // Text Color
-
-$text-color: #222 !default;
-$text-color-light: $gray-light !default;
+$highlight                      : transparentize($yellow, .7) !default;
+$text-color                     : $black !default;
+$text-color-light               : $gray-light !default;
 
 // Input placeholder text color
-
-$placeholder-text-color: $gray-light !default;
+$placeholder-text-color         : $gray-light !default;
 
 // Links
-
-$link-color: $midnight-blue !default;
-$link-color-hover: lighten($link-color, 20%) !default;
-$link-color-active: lighten($link-color, 30%) !default;
-$link-color-visited: darken($link-color, 20%) !default;
+$link-color                     : $midnight-blue !default;
+$link-color-hover               : lighten($link-color, 20%) !default;
+$link-color-active              : lighten($link-color, 30%) !default;
+$link-color-visited             : darken($link-color, 20%) !default;

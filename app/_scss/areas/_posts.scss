@@ -8,16 +8,23 @@
 .post-list {
   @extend %list-in-disguise;
 
+  @include bodhi(smaller-then-nest) {
+    margin: 0 15px;
+  }
+
   > li {
     margin-bottom: 50px;
   }
 
-  a {
+  a,
+  a:link,
+  a:visited {
+    color: $black;
     text-decoration: none;
   }
 
   h1 {
-    @extend %font-freight;
+    @extend %font-jaf-bernino-sans;
     font-size: 28px;
     font-weight: 700;
     line-height: 1.1;
@@ -62,6 +69,10 @@
 // ------------------------------------------------------------------
 
 .post {
+
+  @include bodhi(smaller-then-nest) {
+    padding: 0 15px;
+  }
 
   img {
     max-height: 300px;
@@ -114,6 +125,14 @@
     }
 
   } // a
+
+  .trackback-url {
+
+    .ss-icon {
+      margin-right: 3px;
+    }
+
+  } // .trackback-url
 
 } // .post-footer
 

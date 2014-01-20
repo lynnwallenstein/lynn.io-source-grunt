@@ -5,33 +5,35 @@
 @import "app/fonts/social-circle/_ss-social-circle.scss";
 @import "app/fonts/ss-air/_ss-air.scss";
 
-$heading-stack: "atrament-web", sans-serif;
-$body-stack: Avenir, Helvetica, Arial, sans-serif !default;
-$alt-stack:  Helvetica, Arial, sans-serif !default;
+$heading-stack : "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$body-stack    : Avenir, Helvetica, Arial, sans-serif !default;
+$alt-stack     :  Helvetica, Arial, sans-serif !default;
 
 %font-atrament {
-  font-family: "atrament-web",sans-serif;
+  font-family: "atrament-web", sans-serif;
 }
 
-%font-freight {
-  font-family: "freight-sans-pro",sans-serif;
+%font-jaf-bernino-sans {
+  font-family: $heading-stack;
 }
 
-$base-font-size: 18px !default;
-$base-line-height: 22px !default;
+%font-source-code-pro {
+font-family: "source-code-pro";
+}
+
+$base-font-size   : 18px !default;
+$base-line-height : 22px !default;
 
 //  Headings
+$headings-font-family : $heading-stack !default;
+$headings-font-weight : 700 !default; // instead of browser default, bold
+$headings-font-color  : '' !default; // empty to use BS default, $text-color
 
-$headings-font-family: $heading-stack !default;
-$headings-font-weight: normal !default; // instead of browser default, bold
-$headings-font-color: '' !default; // empty to use BS default, $text-color
-
-$subheadings-font-family: $heading-stack !default;
-$subheadings-font-weight: normal !default; // instead of browser default, bold
-$subheadings-font-color: '' !default; // empty to use BS default, $text-color
+$subheadings-font-family : $heading-stack !default;
+$subheadings-font-weight : normal !default; // instead of browser default, bold
+$subheadings-font-color  : '' !default; // empty to use BS default, $text-color
 
 //  Body
-
-$base-font-family: $body-stack !default;
-$alt-font-family: $alt-stack !default;
+$base-font-family : $body-stack !default;
+$alt-font-family  : $alt-stack !default;
 

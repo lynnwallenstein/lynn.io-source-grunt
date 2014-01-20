@@ -2,7 +2,6 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ page.title }}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,16 +57,16 @@
 
   <nav id="page-navigation">
     <ol>
-      <li><a href="/about/index.html">About</a></li>
-      <li><a href="/">Posts</a></li>
+      <li class="{% if page.url == '/about/' %}current{% endif %}"><a href="/about/index.html">About</a></li>
+      <li class="{% if page.url == '/' %}current{% endif %}"><a href="/">Posts</a></li>
     </ol>
   </nav>
 
-  <section id="main" role="main">
+  <main id="page-main" role="main">
 
    {{ content }}
 
-  </section>
+  </main>
 
   {% include scripts.html %}
 
