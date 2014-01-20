@@ -61,7 +61,7 @@
       color: $silver;
     }
 
-    @include bodhi(compact) {
+    @include bodhi(phone) {
       font-size: 10px;
     }
 
