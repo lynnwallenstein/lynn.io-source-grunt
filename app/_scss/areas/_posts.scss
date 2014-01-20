@@ -30,6 +30,12 @@
     line-height: 1.1;
     margin: 0 0 5px 0;
     padding: 0;
+
+    @include bodhi(phone) {
+     font-size: 1.2rem;
+     line-height: 1;
+    }
+
   } // h1
 
   p {
@@ -53,6 +59,10 @@
 
     a {
       color: $silver;
+    }
+
+    @include bodhi(compact) {
+      font-size: 10px;
     }
 
   } // .post-meta
@@ -94,6 +104,7 @@
     line-height: 1.2;
 
     @include bodhi(phone) {
+     font-size: 1.2rem;
      line-height: 1;
     }
 
@@ -159,6 +170,10 @@
     &:last-child {
       margin-right: 0;
     } // &:last-child
+
+    @include bodhi(phone) {
+      margin-right: 2px;
+    }
 
     a {
       text-decoration: none;

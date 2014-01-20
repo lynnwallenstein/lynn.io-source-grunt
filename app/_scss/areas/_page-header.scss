@@ -150,12 +150,14 @@
   @extend %clearfix;
   display: inline-block;
   height: $navigation-height;
-  padding: 20px 20px 0 0;
+  padding-top: 20px;
+  padding-right: calc(100% - (#{$content-view-width} - 20px));
   width: calc(100% - #{$sidebar-width});
 
   @include bodhi(compact) {
     height: $navigation-height-compact;
     padding: 20px 30px 0 30px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
