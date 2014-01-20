@@ -24,13 +24,13 @@ Now I could use a color picker or even just guestimate colors in Photoshop/Illus
 
 Here enters [Tinge][tinge].
 
-Tinge is a awesome gem created by my amazing friend [Bruce Williams][bruce] who after being sick and tired or my whining and complaining spent like 10 seconds (cause he is a genious) and created me this fabulous little tool that basically input my `_color.scss` SASS partials that I use in my projects and create for me an [Adobe Swatch Exchange][ase] file that I could import into photoshop/illustrator with all my colors.
+Tinge is a awesome gem created by my amazing friend [Bruce Williams][bruce] who after being sick and tired or my whining and complaining spent like 10 seconds (cause he is a genius) and created me this fabulous little tool that basically input my `_color.scss` SASS partials that I use in my projects and create for me an [Adobe Swatch Exchange][ase] file that I could import into photoshop/illustrator with all my colors.
 
-The key thing here is that Tinge computes my sass color variables using sass color functions like lighten, darken, desaturate, etc, so I get the full color palette. Tinge also can expert to JSON or YAML format instead of ASE.
+The key thing here is that Tinge computes my sass color variables using sass color functions like lighten, darken, desaturate, etc, so I get the full color palette. Tinge also can export to JSON or YAML format instead of ASE.
 
 ## How Does It Work
 
-Its pretty simple.  Lets take my example color file for this site:
+It's pretty simple.  Let's take my example color file for this site:
 
 ``` css
 // --------------------------
@@ -165,4 +165,3 @@ Hovering over the colors will also give you the variable name so even makes it q
 [bruce]: http://bruce.io/
 [tinge]: https://github.com/bruce/tinge
 [ase]: http://www.colourlovers.com/web/blog/2007/11/08/color-palettes-in-adobe-swatch-exchange-ase
-
