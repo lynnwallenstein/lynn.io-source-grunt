@@ -30,7 +30,7 @@
     line-height: 1.1;
     margin: 0 0 5px 0;
     padding: 0;
-  }
+  } // h1
 
   p {
     letter-spacing: -0.02em;
@@ -92,7 +92,12 @@
 
   h1 {
     line-height: 1.2;
-  }
+
+    @include bodhi(phone) {
+     line-height: 1;
+    }
+
+  } // h1
 
 } // .post-header
 
