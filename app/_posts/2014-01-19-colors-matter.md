@@ -3,7 +3,8 @@ layout: post
 title: "Keeping Your SCSS Vars and Adobe Palletes in Sync with Tinge"
 date: 2014-01-19  23:35:08
 tags:
-- rubyonrails
+- color
+- adobe
 - bruce
 - gem
 excerpt: Tinge creates Adobe Swatch Exchange (.ase) files from your sass variables.
