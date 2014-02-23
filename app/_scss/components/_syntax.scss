@@ -22,6 +22,11 @@
     color: $base16-08;
   }
 
+  .nc { /* Name.Class */
+    color: $base16-09;
+    font-weight: bold;
+  }
+
   .nf { /* Name.Function */
     color: $base16-04;
   }
@@ -62,7 +67,6 @@
 .highlight .kr { font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
 
-.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
 .highlight .no { color: #008080 } /* Name.Constant */
 .highlight .ni { color: #800080 } /* Name.Entity */
 .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
