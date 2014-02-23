@@ -1,0 +1,57 @@
+// ------------------------------------------------------------------
+//  Fuck Colors
+// ------------------------------------------------------------------
+
+.blink {
+  animation: blink 15s steps(40, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#fuck {
+
+  $orange-light: #FBB03B;
+  $orange-dark: #F7931E;
+
+  $pink-bright: #FF00FF;
+  $pink-light: #F79379;
+
+  $blue: #0065E3;
+
+
+  .legs {
+    fill: $orange-light;
+  }
+
+  .body {
+    fill: $orange-dark;
+    stroke: $orange-light;
+  }
+
+  .shoes {
+    fill: $pink-bright;
+  }
+
+  .eyes {
+    @extend .blink;
+    fill: $blue;
+  }
+
+  .mouth {
+    fill: $orange-dark;
+    stroke: $orange-light;
+  }
+
+  .hair {
+    fill: $orange-light;
+  }
+
+  .cheeks {
+    fill: $pink-light;
+  }
+
+} // #fuck

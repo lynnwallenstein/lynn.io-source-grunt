@@ -32,18 +32,7 @@
     height: 125px;
   }
 
-  h1 {
-    $size: 200px;
-    @extend %font-atrament;
-    background-image: url("#{$image-path}/fuck.svg");
-    background-position: top left;
-    background-size: auto $size;
-    color: $white;
-    font-size: 80px;
-    font-weight: 500;
-    line-height: $size;
-    margin: 0;
-    padding-left: 200px;
+  #title {
     position: absolute;
       bottom: 200px;
       left: 50px;
@@ -53,14 +42,43 @@
     }
 
     @include bodhi(phone) {
-      $size: 110px;
-      background-size: auto $size;
+      height: 125px;
+      bottom: 0;
+      left: 0;
+    }
+
+  } // #title
+
+  $size: 200px;
+
+  svg {
+    display: inline-block;
+    float: left;
+    height: $size;
+    margin-right: 20px;
+    width: 125px;
+
+    @include bodhi(phone) {
+      height: $size / 2;
+      margin-left: 15px;
+      width: 75px;
+    }
+
+  } // svg
+
+  h1 {
+    @extend %font-atrament;
+    color: $white;
+    display: inline-block;
+    font-size: 80px;
+    float: left;
+    font-weight: 500;
+    line-height: $size;
+    margin: 0;
+
+    @include bodhi(phone) {
       font-size: 50px;
-      height: $size;
-      line-height: $size - 20px;
-      padding-left: 120px;
-        bottom: 10px;
-        left: 20px;
+      line-height: 100px;
     }
 
   } // h1
