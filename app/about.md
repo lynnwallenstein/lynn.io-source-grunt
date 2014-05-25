@@ -6,11 +6,11 @@ date:   2013-09-28 14:40:06
 
 ![Lynn Wallenstein][photo]
 
-I am a 34 year old web designer/developer who specializes in open standards, accessibility and user experience... basically I make things pretty(er), play with CSS/Sass and all kinds of nifty front end stuff.
+I am a 35 year old web designer/developer who specializes in open standards, accessibility and user experience... basically I make things pretty(er), play with CSS/Sass and all kinds of nifty front end stuff.
 
 I am a Developer Superhero at [GitHub][github] (yep, that is really my title).
 
-I am currently living in [Washington, DC][foursquare] and have lived in New Jersey, San Francisco Bay Area, Las Vegas and Maryland.
+I am currently living in [San Francisco][foursquare] and have lived in New Jersey, Silicon Valley, Las Vegas, Maryland and Washington DC.
 
 I am a [(very) amateur photographer][flickr], [electro music fan][lastfm] and [avid reader of non-fiction literature][goodreads].
 
@@ -28,5 +28,3 @@ You can contact me by email at <a href="mailto:lynn@lynn.io">lynn@lynn.io</a>.
 [twitter]: http://www.twitter.com/LynnWallenstein
 
 [photo]: /img/lynn-wallenstein.jpg "Lynn Wallenstein - 2013"
-
-
