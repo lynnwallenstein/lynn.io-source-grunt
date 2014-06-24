@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<html class="no-js">
+<!doctype html>
+<html class="no-js" lang="">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ page.title }}</title>
-  <meta name="description" content="">
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- build:css({app,.tmp}) /css/main.css -->
