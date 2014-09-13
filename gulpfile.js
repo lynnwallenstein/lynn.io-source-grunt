@@ -5,17 +5,17 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jekyll      = require('gulp-jekyll');
 
+
+
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-/**
- * Build the Jekyll Site
- */
-gulp.task('jekyll-build', function (done) {
+// Build the Jekyll Site
+gulp.task("jekyll-build", function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-        .on('close', done);
+    return cp.spawn("jekyll", ["build"], {stdio: "inherit"})
+        .on("close", done);
 });
 
 /**
@@ -28,12 +28,12 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('serve', ['sass', 'jekyll-build'], function() {
-    browserSync({
-        server: {
-            baseDir: '_site'
-        }
-    });
+gulp.task("serve", ["sass", "jekyll-build"], function() {
+  browserSync({
+    server: {
+        baseDir: "_site"
+    }
+  });
 });
 
 /**
