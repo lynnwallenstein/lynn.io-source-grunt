@@ -10,6 +10,9 @@ linters:
   StringQuotes:
     style: double_quotes
 
+  IdWithExtraneousSelector:
+    enabled: false # would like to kill this, but we use too many #'s right now
+
   SpaceBeforeBrace:
     enabled: true
     allow_single_line_padding: true
