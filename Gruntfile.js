@@ -118,8 +118,7 @@ module.exports = function (grunt) {
         bundleExec: true,
         debugInfo: false,
         lineNumbers: false,
-        loadPath: 'app/_bower_components',
-        sourcemap: true
+        loadPath: 'app/_bower_components'
       },
       dist: {
         files: [{

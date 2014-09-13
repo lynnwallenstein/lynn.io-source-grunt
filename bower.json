@@ -1,9 +1,9 @@
 {
   "name": "lynnio",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "normalize-css": "3.0.1",
     "jquery": "2.1.1",
-    "colorbox": "1.5.9"
+    "colorbox": "1.5.14"
   }
 }

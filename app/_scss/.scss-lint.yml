@@ -13,9 +13,22 @@ linters:
   IdWithExtraneousSelector:
     enabled: false # would like to kill this, but we use too many #'s right now
 
+  SpaceBeforeBrace:
+    enabled: true
+    allow_single_line_padding: true
+
+  EmptyRule:
+    enabled: false
+
   PlaceholderInExtend:
     enabled: false
 
   SelectorDepth:
     enabled: true
     max_depth: 4 # we're working our way down to 3
+
+  NameFormat:
+    enabled: false
+
+  LeadingZero:
+    style: include_zero
