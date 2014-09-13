@@ -2,9 +2,9 @@
 //  Typography
 // ------------------------------------------------------------------
 
-@import "app/fonts/social-circle/_ss-social-circle.scss";
-@import "app/fonts/ss-air/_ss-air.scss";
-@import "app/fonts/ss-junior/_ss-junior.scss";
+@import "../../../fonts/social-circle/_ss-social-circle.scss";
+@import "../../../fonts/ss-air/_ss-air.scss";
+@import "../../../fonts/ss-junior/_ss-junior.scss";
 
 $heading-stack : "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 $body-stack    : Avenir, Helvetica, Arial, sans-serif !default;
@@ -37,4 +37,3 @@ $subheadings-font-color  : '' !default; // empty to use BS default, $text-color
 //  Body
 $base-font-family : $body-stack !default;
 $alt-font-family  : $alt-stack !default;
-
