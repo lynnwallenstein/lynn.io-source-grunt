@@ -5,6 +5,9 @@
 
 # Use _config.build.yml to override these settings on `grunt build`.
 
+gems:
+  - jemoji
+
 domain: http://127.0.0.1:9000/
 name: lynn.io
 description: Lynn.io
@@ -17,12 +20,12 @@ author:
 
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.
-exclude: ['img', 'css', 'js', 'fonts', "_bower_components",
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+exclude: ["img", "css", "js", "fonts", "_bower_components",
+          "**.png", "**.jpg", "**.jpeg", "**.gif", "**.webp", "**.svg", "**.ico"]
 
 # Force inclusion of directories and/or files in the conversion.
 # .htaccess is a good example since dotfiles are excluded by default.
-include: ['.htaccess']
+include: [".htaccess"]
 
 # Default post path style
 # date  /:categories/:year/:month/:day/:title.html
@@ -40,7 +43,7 @@ show_drafts: true
 
 # Split posts over multiple subdirectories called “page2”, “page3”, … “pageN”
 paginate: 5
-paginate_path: 'page:num'
+paginate_path: "page:num"
 
 # Markdown library
 markdown: redcarpet
@@ -49,4 +52,5 @@ markdown: redcarpet
 highlighter: pygments
 
 # Emoji
-emoji_dir: img/emoji
+emoji:
+  src: "/img"
