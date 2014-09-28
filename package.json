@@ -1,6 +1,6 @@
 {
   "name": "lynnio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yeoman / Grunt workflow for lynn.io",
   "dependencies": {},
   "devDependencies": {
