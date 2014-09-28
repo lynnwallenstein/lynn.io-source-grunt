@@ -10,7 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- build:css({app,.tmp}) /css/main.css -->
-    <link rel="stylesheet" href="/_bower_components/colorbox/example1/colorbox.css">
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
   <!-- endbuild -->
@@ -27,12 +26,13 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </head>
-<body class="preload {% if page.post-image %}custom-image{% endif %}">
+
+<body class="preload halloween {% if page.post-image %}custom-image{% endif %}">
 
   <header id="page-header" role="banner">
 
     <a id="title" href="/">
-      {% include fuck.svg %}
+      {% include fuck-halloween.svg %}
       <h1>Lynn.io</h1>
     </a>
 
@@ -58,8 +58,12 @@
 
   <nav id="page-navigation">
     <ol>
-      <li class="{% if page.url == '/about/' %}current{% endif %}"><a href="/about/index.html">About</a></li>
-      <li class="{% if page.url == '/' %}current{% endif %}"><a href="/">Posts</a></li>
+      <li class="{% if page.url == "/about/" %}current{% endif %}">
+        <a href="/about/index.html">About</a>
+      </li>
+      <li class="{% if page.url == "/" %}current{% endif %}">
+        <a href="/">Posts</a>
+      </li>
     </ol>
   </nav>
 
