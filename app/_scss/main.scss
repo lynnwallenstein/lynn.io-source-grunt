@@ -20,6 +20,8 @@
 @import "dependencies/extends/_non-semantic-helpers";
 @import "dependencies/extends/_shortcuts";
 
+@import "vendor/_colorbox";
+
 // Default
 // ------------------------------------------------------------------
 @import "base/_default";
@@ -40,4 +42,3 @@
 // Print CSS
 // ------------------------------------------------------------------
 @import "dependencies/print";
-

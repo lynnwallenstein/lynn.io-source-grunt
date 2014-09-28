@@ -101,12 +101,7 @@
 
     body.#{$holiday} & {
       background-image: url("#{$image-path}/color-blocks-#{$holiday}.jpg");
-
-      h1 {
-        background-image: url("#{$image-path}/fuck-#{$holiday}.svg");
-      }
-
-    } // body.#{$holiday} & {
+    }
 
   } // @each
 
