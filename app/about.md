@@ -6,7 +6,7 @@ date:   2013-09-28 14:40:06
 
 ![Lynn Wallenstein][photo]
 
-I am a 35 year old web designer/developer who specializes in open standards, accessibility and user experience... basically I make things pretty(er), play with CSS/Sass and all kinds of nifty front end stuff.
+I am a <time class="time js-relative-old" datetime="1979-03-28">...</time> old web designer/developer who specializes in open standards, accessibility and user experience... basically I make things pretty(er), play with CSS/Sass and all kinds of nifty front end stuff.
 
 I am a Developer Superhero at [GitHub][github] (yep, that is really my title).
 
