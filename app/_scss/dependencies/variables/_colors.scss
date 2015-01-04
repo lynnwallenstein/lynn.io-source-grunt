@@ -2,7 +2,8 @@
 //  Colors
 // ------------------------------------------------------------------
 
-$black                          : #333332 !default;
+$black                          : #000 !default;
+  $black-text                   : #333 !default;
 $white                          : #fff !default;
 
 // Grays
@@ -120,8 +121,8 @@ $app-color-secondary            : $red !default; // Secondary color used
 $site-background-color          : $white !default;
 
 // Text Color
-$highlight                      : transparentize($yellow, .7) !default;
-$text-color                     : $black !default;
+$highlight                      : transparentize($yellow, 0.7) !default;
+$text-color                     : $black-text !default;
 $text-color-light               : $gray-light !default;
 
 // Input placeholder text color

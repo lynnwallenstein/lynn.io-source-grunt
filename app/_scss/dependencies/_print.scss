@@ -3,12 +3,15 @@
 //   Inlined to avoid required HTTP connection: h5bp.com/r
 // ------------------------------------------------------------------
 
+
 @media print {
 
-  * {
+  *,
+  *:before,
+  *:after {
     background: transparent !important;
     box-shadow: none !important;
-    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    color: $black !important;
     text-shadow: none !important;
   }
 
@@ -25,13 +28,8 @@
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
     content: "";
   }
 
@@ -42,11 +40,11 @@
   }
 
   thead {
-    display: table-header-group; /* h5bp.com/t */
+    display: table-header-group;
   }
 
-  img,
-  tr {
+  tr,
+  img {
     page-break-inside: avoid;
   }
 
@@ -54,15 +52,11 @@
     max-width: 100% !important;
   }
 
-  @page {
-    margin: 0.5cm;
-  }
-
   p,
   h2,
   h3 {
     orphans: 3;
-    widows : 3;
+    widows: 3;
   }
 
   h2,
@@ -70,4 +64,4 @@
     page-break-after: avoid;
   }
 
-} // @media print {
+}

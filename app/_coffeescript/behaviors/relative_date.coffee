@@ -82,5 +82,4 @@ refreshRelativeDates = (container = document) ->
 # Refresh relative dates every min
 $ ->
   refreshRelativeDates()
-  console.log("Oh hai")
   setInterval refreshRelativeDates, 60000
